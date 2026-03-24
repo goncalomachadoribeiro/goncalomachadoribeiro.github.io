@@ -40,15 +40,41 @@ body {
   opacity: 0.7;
 }
 
-/* flashing effect */
+/* imagens */
+.images {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 300px;
+  max-width: 90%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+/* efeito a piscar */
 @keyframes flash {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
 }
 
-/* mobile optimization */
+/* mobile */
 @media (max-width: 600px) {
   .countdown {
     font-size: 15vw;
+  }
+
+  .images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .images img {
+    width: 90%;
   }
 }
