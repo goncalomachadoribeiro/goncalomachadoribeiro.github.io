@@ -31,7 +31,6 @@ body {
   font-size: clamp(40px, 14vw, 200px);
   font-weight: 900;
   color: red;
-  animation: flash 1s infinite;
 }
 
 .subtext {
@@ -57,11 +56,6 @@ body {
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
 }
 
-/* efeito a piscar */
-@keyframes flash {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
 
 /* mobile */
 @media (max-width: 600px) {
